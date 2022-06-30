@@ -1,0 +1,16 @@
+.about-title {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #AC3B61;
+}
+
+.about-subcontent {
+    font-size: 1.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.about-content {
+    font-size:1em;
+}

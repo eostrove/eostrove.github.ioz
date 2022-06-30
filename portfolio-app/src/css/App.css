@@ -1,0 +1,234 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #e9f9fc; */
+  margin: 1em;
+  border-radius: 10px;
+  font-family: Helvetica;
+}
+
+
+.sidebar {
+  width: 250px;
+  height: 80vh;
+  min-height: 250px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  /* background-color: rgba(182, 78, 161, 0.3); */
+  padding: 50px;
+  margin: 15px;
+  font-family: Helvetica;
+  flex-shrink: 0;
+}
+
+
+.main,
+.sidebar {
+  border: 5px solid $color-dark;
+  background-color: $color-background;
+  color: $color-dark;
+  padding: 15px;
+  top: 5%;
+}
+
+.page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-top: 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  top: 5%;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 5%;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* body {
+  padding: 3%;
+  background-color: $color-body;
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+}
+
+code, pre {
+  background-color: #ccc;
+  padding: 0 3px;
+  border-radius: 5px;
+}
+
+.bottom {
+  justify-self: bottom;
+} */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: rgb(232, 231, 231);
+  /* background: #EDC7B7; */
+  color: white;
+  font-family: Helvetica;
+  font-weight: 300;
+}
+
+.navbar_title {
+  margin-right: auto;
+  font-size: 100%;
+  padding: 12px 16px;
+  /* vertical-align: middle; */
+  text-align: center;
+  font-weight: 500;
+  text-transform: lowercase;
+  color: black;
+}
+
+.navbar_item {
+  padding: 16px 16px;
+  font-size: 100%;
+  cursor: pointer;
+  text-transform: lowercase;
+  font-weight: bold;
+
+  /* vertical-align: middle; */
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #787878;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+.uppercase-bold {
+  font-size: 1em;
+  margin: 0, 0, 0.75, 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  line-height: 4em;
+}
+
+.uppercase-bold-about {
+  font-size: 0.9em;
+  margin: 0, 0, 0.75, 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  line-height: 4em;
+}
+
+form {
+  max-width: 400px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+		background-color: transparent;
+		border: 0;
+		box-shadow: inset 0 0 0 1px _palette(border);
+		color: _palette(fg-bold) !important;
+		cursor: pointer;
+		display: inline-block;
+		font-family: _font(family-heading);
+		font-size: 0.8em;
+		font-weight: _font(weight-heading-bold);
+		height: _size(element-height) * 1.75;
+		letter-spacing: _font(kerning-heading);
+		line-height: _size(element-height) * 1.75;
+		padding: 0 2.5em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+    border-radius: 5px;
+}
+
+button:hover {
+  box-shadow: inset 0 0 0 1px _palette(accent);
+  background-color: #787878;
+  color: white;
+}
+
+
+button:active {
+  background-color: #787878;
+  color: white;
+}
+
+.contact-icon {
+  font-size: 20px;
+  color: #49bf9d;
+}
+
+.project-image {
+  width:420px;
+  height: auto;
+}
+
+.published {
+  display: block;
+  font-family: _font(family-heading);
+  font-size: 0.8em;
+  font-weight: _font(weight-heading);
+  letter-spacing: _font(kerning-heading);
+  margin: -0.625em 0 (_size(element-margin) * 0.85) 0;
+  text-transform: uppercase;
+  color: #787878;
+}
+
+.degree {
+  font-size: 15px;
+}

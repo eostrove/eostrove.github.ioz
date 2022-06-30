@@ -1,0 +1,16 @@
+.hello,
+.hello2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 100px;
+    text-indent: 20px;
+}
+.hello2 {
+    text-indent: 65px;
+}
+
+.home-content {
+    justify-content: center;
+}
